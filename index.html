@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>RBS</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+    <!-- ----------------Navbar1--------------- -->
+    <div class="header">
+        <div class="nav1">
+            <img src="./image/logo.png" />
+        
+        
+        <div class="state_select" id="state">
+            <div class="filter">
+                <i class="fa fa-light fa-magnifying-glass"></i>
+                <p id="text">select state</p>
+                <i class="fa-solid fa-chevron-down" id="moving"></i>
+            </div>
+           
+            <ul class="option_box" id="list">
+                <li class="option" onclick="myfunction('Andhra Pradesh')">
+                    <i class="fa fa-light fa-location-dot"></i>
+                    <p>Andhra Pradesh</p>
+                </li>
+                <li class="option" onclick="myfunction('Bangalore')">
+                    <i class="fa fa-light fa-location-dot"></i>
+                    <p>Banglore</p>
+                </li>
+                <li class="option" onclick="myfunction('Chennai')">
+                    <i class="fa fa-light fa-location-dot"></i>
+                    <p>Chennai</p>
+                </li>
+                <li class="option" onclick="myfunction('Delhi')">
+                    <i class="fa fa-light fa-location-dot"></i>
+                    <p>Delhi</p>
+                </li>
+                <li class="option" onclick="myfunction('Kolkata')">
+                    <i class="fa fa-light fa-location-dot"></i>
+                    <p>Kolkata</p>
+                </li>
+                <li class="option" onclick="myfunction('Mumbai')">
+                    <i class="fa fa-light fa-location-dot"></i>
+                    <p>Mumbai</p>
+                </li>
+            </ul>
+           </div>
+           
+            <div id="search">
+                <input type="text" id="search-inp" placeholder="Find Cars Mobile Phones and more..."/>
+                <p> <i class="fa fa-light fa-magnifying-glass"></i></p>
+              </div>
+
+              <div class="language" id="lang">
+                <div class="lang1">
+                <p id="eng_tag">English</p>
+                <i class="fa-solid fa-chevron-down" id="move"></i>
+              </div>
+                 
+              <ul class="hin_eng">
+                    <li onclick="languages('English')">English</li>
+                    <li onclick="languages('हिंदी')">हिंदी</li>
+                </ul>
+            </div>
+
+                <div class="message">
+                    <i class="fa-regular fa-comment"></i>
+                </div>
+
+                <div class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+
+                <div class="photo" id="abc">
+                    <div class="avatar" id="avatar_img">
+                        <img src="./image/photo.jpg" alt=""/>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <div class="dropdown" id="dropdown">
+                        <div class="name_img">
+                            <img src="./image/photo.jpg" alt=""/>
+                            <p>Sudhist Kumar</p>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <i class="fa fa-light fa-heart"></i>
+                                <p>My ADS</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-light fa-building"></i>
+                                <p>Buy Business Packages</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-light fa-briefcase"></i>
+                                <p>Bought Packages & Billing</p>
+                            </li>
+                            <hr>
+                            <li>
+                                <i class="fa-regular fa-circle-question"></i>
+                                <p>Help</p>
+                            </li>
+                            <hr>
+                            <li>
+                                <i class="fa fa-light fa-gear"></i>
+                                <p>Settings</p>
+                            </li>
+                            <hr>
+                            <!-- <li>
+                                <i class="fa-solid fa-arrow-down-to-line"></i>
+                                <p>Install RBS Lite app</p>
+                            </li> -->
+                            <li>
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                <p>Logout</p> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sell">
+                    <button <i class="fa-solid fa-plus"></i>Sell</button>
+                   
+                </div>  
+            </div>
+    </div>
+                    
+       <!-- ----------------Navbar2--------------- -->
+    <div class="nav2">
+                <h3 id="text">All Categories</h3>
+                <i id="mov"class="fa-solid fa-chevron-down" ></i>
+           
+                <p>Cars<p>
+                <p>Motorcycles</p>
+                <p>Mobile Phones</p>
+                <p>For Sale: Houses & Apartments</p>
+                <p>Scooters</p>
+                <p>Commercial & Other Vehicles</p>
+                <p>For Rent: Houses & Apartments</p>
+    </div> 
+    <!-- ----------------------Navbar3---------------------- -->
+    <div id="nav3">
+        <img src="./image/logo1.png" alt=""/>
+        <div id="enj">
+            <h2 class="h2">ENJOY ADDITIONAL </h2>
+            <h2>BENEFITS WORTH ₹1,50,000 </h2>
+        </div>
+        <button>Sell Car</button>
+        <img class="img"src="./image/car1.jpg" alt=""/>
+    </div>
+
+    <!-- -----------------------------ad-img------------------------- -->
+    <div class="ad_img">
+        <img src="./image/ad-img.png" alt=""/>
+        <i class="fa-regular fa-rectangle-xmark" id="ad_icon"></i>
+    </div>
+
+    <!-- ------------------------------------product---------------------------- -->
+    <div id="container">
+        <div id="img1">
+            <img src="./image/images/image1.webp" alt="Error">
+            <h3>₹ 2,75,000</h3>
+            <p>Apple Macbook pro m1 max for sale</p>
+            <div>
+                <p>EDAPALLY KOCHI</p>
+                <P>5 DAYS AGO</P>
+            </div>
+        </div>
+
+        <div id="img2">
+            <img src="./image/images/image2.webp" alt="Error" >
+            <h3>₹ 30,50,000</h3>
+            <p>1Bds-1Ba-602 ft2-flat</p>
+            <div>
+                <p>EDAPALLY KOCHI</p>
+                <P>TODAY</P>
+            </div>
+        </div>
+
+        <div>
+            <img src="./image/images/image3.webp" alt="Error">
+            <h3>₹ 45,000</h3>
+            <p>APPLE IPHONE 13</p>
+            <div>
+                <p>EDAPALLY KOCHI</p>
+                <P>FEB 02</P>
+            </div>
+        </div>
+
+        <div>
+            <img src="./image/images/image4.webp" alt="Error">
+            <h3>₹ 9,999</h3>
+            <p>ONE PLUS NORD(UPTO 50% OFF</p>
+            <div>
+                <p>EDAPALLY KOCHI</p>
+                <P>TODAY</P>
+            </div> 
+        </div>
+
+        <div>
+            <img src="./image/images/image5.webp" alt="Error">
+            <h3>₹ 15,000</h3>
+            <!-- <p>2010 - 50,000km</p> -->
+            <p>Honda Twister-2010 - 50,000km</p>
+            <div>
+                <p>EDAPALLY KOCHI</p>
+                <P>FEB 05</P>
+            </div> 
+        </div>
+
+        <div>
+            <img src="./image/images/image6.webp" alt="Error">
+            <h3>₹ 6,10,000</h3>
+            <p>2020 - 40,000 km</p>
+            <p>Maruti Suzuki Swift 2020 Petrol</p>
+            <div>
+                <p>EDAPALLY KOCHI</p>
+                <P>7 DAYS AGO</P>
+            </div> 
+        </div>
+
+        <div>
+            <img src="./image/images/image7.webp" alt="Error">
+            <h3>₹ 90,00,000</h3>
+            <p>3Bds-ba-1350Sq.Ft</p>
+            <p>1350 Sq.Ft House for sale</p>
+            <div>
+                <p>EDAPALLY KOCHI</p>
+                <P>TODAY</P>
+            </div> 
+        </div>
+
+        <div>
+            <img src="./image/images/image8.webp" alt="Error">
+            <h3>₹ 3,900</h3>
+            <p>Whirlpool good red</p>
+            <div>
+                <p>EDAPALLY KOCHI</p>
+                <P>FEB 10</P>
+            </div> 
+        </div>
+
+        <div>
+            <img src="./image/images/image9.webp" alt="Error">
+            <h3>₹ 15,000</h3>
+            <p>1Bds-1Ba-600 ft2-flat</p>
+            <div>
+                <p>EDAPALLY KOCHI</p>
+                <P>2 DAYS AGO</P>
+            </div> 
+        </div>
+
+        <div>
+            <img src="./image/images/image10.webp" alt="Error">
+            <h3>₹ 10,000</h3>
+            <p>USED KITCHEN APPLIANCES</p>
+            <div>
+                <p>EDAPALLY KOCHI</p>
+                <P>TODAY</P>
+            </div> 
+        </div>
+
+        <div>
+            <img src="./image/images/image11.webp" alt="Error">
+            <h3>₹ 4,00,000</h3>
+            <p>3Bds-1Ba-1100 ft2</p>
+            <div>
+                <p>EDAPALLY KOCHI</p>
+                <P>5 DAYS AGO</P>
+            </div> 
+        </div>
+
+        <div>
+            <img src="./image/images/image12.webp" alt="Error">
+            <h3>₹ 4,500</h3>
+            <p>Branded Surplus new fridges</p>
+            <div>
+                <p>EDAPALLY KOCHI</p>
+                <P>1 DAYS AGO</P>
+            </div> 
+        </div>
+
+        <div>
+            <img src="./image/images/image13.webp" alt="Error">
+            <h3>₹ 3,999</h3>
+            <p>Branded watches with mrp tags</p>
+            <div>
+                <p>EDAPALLY KOCHI</p>
+                <P>FEB 15</P>
+            </div> 
+        </div>
+
+        <div>
+            <img src="./image/images/image14.webp" alt="Error">
+            <h3>₹ 3,500</h3>
+            <p>Good condition semi automatic washing</p>
+            <div>
+                <p>EDAPALLY KOCHI</p>
+                <P>5 DAYS AGO</P>
+            </div> 
+        </div>
+
+        <div>
+            <img src="./image/images/image15.webp" alt="Error">
+            <h3>₹ 1,500</h3>
+            <p>HMT NISHAT</p>
+            <div>
+                <p>EDAPALLY KOCHI</p>
+                <P>5 DAYS AGO</P>
+            </div> 
+        </div>
+
+        <div>
+            <img src="./image/images/image16.webp" alt="Error">
+            <h3>₹ 10,000</h3>
+            <p>AC FOR SALE GOOD CONDITION</p>
+            <div>
+                <p>EDAPALLY KOCHI</p>
+                <P>5 DAYS AGO</P>
+            </div> 
+        </div>
+        
+    </div>
+
+        <!-- <div id="detail">
+                <h4>RBS Autos(Cars)</h4>
+                <h4>Properties</h4>
+                <p>For Sale: Houses & Apartments</p>
+                <p>For Rent: Houses & Apartments</p>
+                <p>Lands & Plots</p>
+                <p>For Rent: Shops & Offices</p>
+                <p>For Sale: Shops & Offices</p>
+                <p>PG & Guest Houses</p>
+                <h4>Moiles</h4>
+                <p>Moile Phones</p>
+                <p>Accessories</p>
+                <p>Talets</p>
+    </div> -->
+    
+
+</body>
+<script>
+    //   <!-- ----------------Navbar1--------------- -->
+let state = document.getElementById("state");
+let moving = document.getElementById("moving");
+let text =  document.getElementById("text");
+let list =  document.getElementById("list");
+
+state.addEventListener("click",()=>{
+    list.classList.toggle("hide");
+    moving.classList.toggle("rotate")
+});
+function myfunction(data){
+    text.innerHTML = data;
+}
+
+let eng_tag = document.getElementById("eng_tag");
+let hin_eng = document.querySelector(".hin_eng");
+let lang = document.getElementById("lang");
+let move = document.getElementById("move");
+
+lang.addEventListener("click", () =>{
+    hin_eng.classList.toggle("display_lang");
+});
+function languages(show){
+    hin_eng.innerHTML = show;
+}
+
+let abc = document.getElementById("abc");
+let dropdown = document.getElementById("dropdown");
+abc.addEventListener("click",()=>{
+    dropdown.classList.toggle("block");
+});
+
+                      
+    //    <------------------Navbar2----------------->
+    // let category = document.getElementById("category");
+    // let detail = document.getElementById("detail");
+    // category.addEventListener("click",()=>{
+    //     detail.classList.toggle("cat");
+    // });
+        
+        //   <---------------------ad_img-------------------->
+        
+let ad_img = document.querySelector(".ad_img");
+let ad_icon = document.getElementById("ad_icon");
+
+ad_icon.addEventListener("click", ()=>{
+    ad_img.style = 'display:none';
+})
+
+            //  --------------------------product--------------------
+
+</script>
+</html>
