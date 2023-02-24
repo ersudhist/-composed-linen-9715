@@ -4,9 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    background-color: #d9f9fc;
-}
+
 .header{
     background-color: white;
     box-shadow: 0 0 2px grey;
@@ -224,152 +222,100 @@ body{
     margin-left: 20px;
 }
 
+         /* ---------------------Navbar2------------------ */
+.nav2{
 
-       /* -------------------ad-img-------------------------- */
-.ad_img img{
-    width: 100%;
-    position: relative;
-    z-index: -1;
-}  
-.ad_img{
-    /* border: 1px solid red; */
-    width: 70%;
-    /* height: 200px; */
-    margin: auto;
-    margin-top: 40px;
-    position: relative;
-}    
-.ad_img i{
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    z-index: 1;
-    cursor: pointer;
-}
-
-          /* -------------------Product-img-------------------------- */
-.product_img{
-    width: 90%;
+    box-shadow: 0 0 2px grey;
+    position: sticky;
+    height: 40px;
     display:flex;
+    justify-content: space-around;
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    /* background-color: #23e5db; */
-    height: 450px;
-}
-.image_description{
-    width: 65%;
-    background-color: black;
-    border-radius: 5px;
-}
-.swiper-slide img{
-    width: 50%;
-    height: 450px;
-    margin-left: 180px;
-}
-#prev{
-    color: white;
-}
-#next{
-    color: white;
-}
-.description{
-    width: auto;
-    background-color: white; 
-    border: 1px solid rgb(179,178,178);
-    border-radius: 5px;
-    padding: 15px;
-}
-.description p{
+    align-items: center;
     font-size: 14px;
-    padding-top: 15px;
+    padding-left: 20px;
 }
-         /* -------------------------product_detail-------------------- */
-.product_details{
-    /* border: 2px solid red; */
-    width: 105%;
+#mov{
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 50px;
 }
-.box1{
-    /* border: 2px solid yellow; */
-    border: 1px solid rgb(179,178,178);
-    background-color: white;
-    border-radius: 5px;
-    padding-left: 15px;
-    margin-left: 15px;
-    width: auto;
-}
-.price{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 15px;
-}
-.price i{
-    padding-right: 10px;
-}
-#II{
-    padding-left: 170px;
-}
-.box1 p{
-    font-size: 14px;
-    padding-top: 10px;
-    color: grey;
-}
-#loc{
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 0 15px 0;
-}
-#loc>p{
-    font-size: 12px;
-}
-
-     /* ------------------------------box2----------------------------- */
-
-.seller_details{
-    display: flex;
-}
-.seller_details img{
-    width: 80px;
-    border-radius: 50%;
-    margin-top: 15px;
-}
-.seller_details h3{
-    margin: 30px 0 0 10px;
-    color:rgb(80, 58, 58);
-}
-#a{
-    padding: 10px 110px;
-    border: 2px solid black;
-    transition: all 0s;
-    border-radius: 5px;
-    margin-top : 15px;
-}
-#a>a{
+.nav2 a{
     text-decoration: none;
     color: black;
 }
-#a:hover{
-    border: 4px solid black;
-    background-color: #d4d8d8;
+         /* ---------------------chat-box------------------ */
+.chat-box{
+    width: 800px;
+    margin: 2px auto;
+    border: 1px solid #d3d3d3;
 }
-#box2{
-    height: 170px;
-    margin-top: 10px;
+.heading img{
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 15px;
 }
-      /* ------------------------------box3----------------------------- */
-
-#box3{
-    margin-top: 10px;
+.img-chat{
+    display: flex;
+    align-items: center;
 }
-#box3 h3{
-    padding: 15px 15px 10px 15px;
+.img-chat h3{
+    margin-left: 15px;
 }
-#box3 p{
-    padding-left: 15px;
-    font-size: 12px;
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #d3d3d3;
+    padding: 4px 0;
 }
-#box3 img{
+.heading i{
+    margin-right: 15px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.heading i:hover{
+    margin-right: 13px;
+    font-size: 25px;
+}
+.see-chat{
+    background-color: #e7eefa;
+    height: 350px;
+    border: 1px solid #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#msg{
+    border-radius: 6px;
+    border: 1px solid grey;
+    background-color: white;
+    margin: 20px;
+    padding: 8px 10px;
+    font-size: 15px;
+    display: none;
+}
+.send input{
     width: 100%;
-    padding: 15px;
+    padding: 15px 16px;
+    font-size: 16px;
+    border: none;
+    outline: none;
 }
-
+.send i{
+    color :white;
+    background-color: black;
+    padding: 16px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.send{
+    display: flex;
+    justify-content: space-between;
+}
+#demo{
+    display: none;
+}
