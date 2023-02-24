@@ -4,226 +4,226 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-    /* ---------------------Navbar1------------------ */
-    .header{
-        background-color: white;
-        box-shadow: 0 0 2px grey;
-        position: sticky;
-        top: 0%;
-        z-index: 5;
-    }
-    .nav1{
-        /* border: 2px solid yellow; */
-        display: flex;
-        align-items: center;
-        margin: auto;
-        background-color: #E1F5FE;
-        width: auto;
-        justify-content: space-between;
-    }
-    .nav1 img{
-        width: 100px;
-        margin-left: 20px;
-    }
-    .state_select{
-      width: 250px;
-       /* align-items: center; */
-    }
-    .filter i{
-        font-size: 15px;
-        transition: all 0.3s;
-    }
-    .filter{
-        width: 100%;
-        padding : 10px 10px;
-        background-color: rgba(255,255,255,0.7);
-        border-radius: 6px;
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: 2px solid black;
-        margin-left: 40px;
-    }
-    .filter p{
-        padding-right: 75px;
-    }
-    .option{
-        display: flex;
-        padding: 10px;
-        width: 250px;
-        cursor: pointer;
-    }
-    .option:hover{
-          background-color: #c7dcff;
-    }
-    .option p{
-        margin-left: 10px;
-        color: #444444;
-    }
-    .option i{
-        color: #839a9c;
-    }
-    .option_box{
-        box-shadow: 0 0 10px grey;
-        background-color: white; 
-        display: none;
-        position: absolute;
-        top: 100px;
-        position: absolute;
-        top: 60px;
-    }
-    .hide{
-        display:block;
-    }
-    .rotate{
-        transform: rotate(180deg);
-    }
-    #search{
-        display: flex;
-        /* width: 350px;
-        height:48px; */
-        margin-left: 60px;
-    }
-    #search i{
-        background-color: black;
-        color: white;
-        padding: 10px;
-        font-size: 25px;
-        border-radius: 0px 5px 5px 0px;
-        cursor: pointer;  
-    }
-    #search-inp{
-        padding: 10px;
-        width: 300px;
-        font-size: 15px;
-        border: 2px solid black;
-        border-radius: 5px 0px 0px 5px;
-    }
-    #eng_tag{
-        cursor: pointer;
-        font-size: 18px;
-       margin-left: 25px;
-    }
-    .hin_eng{
-        background-color: white;
-        box-shadow: 0 0 10px grey;
-        width: 180px;
-        display: none;
-        position: absolute;
-        top: 60px;
-       
-    }
-    .hin_eng li{
-        list-style: none;
-        padding: 10px 20px;
-        margin-top: 10px;
-    }
-    .hin_eng li:hover{
-        background-color: #c7dcff;
-    }
-    .lang1{
-        display: flex;
-    }
-    .lang1 i{
-        margin-top: 5px;
-        padding-left: 10px; 
-        transition: all 0.3s;
-    }
-    .display_lang{
-        display: block;
-    }
-    .message i{
-        font-size: 22px;
-        color: black;
-        cursor: pointer;
-       margin-left: 25px;
-    }
-    .notification i{
-        font-size: 22px;
-        color: black;
-        cursor: pointer;
-       margin-left: 25px;
-    }
-    .avatar{
-        display:flex;
-    }
-    .avatar i{
-        margin-top: 25px;
-        padding-left: 10px;
-        
-    }
-    .avatar img{
-        width: 60px;
-        border-radius: 50%;
-        cursor: pointer;
-        margin-top: 10px;
-        margin-left: 25px;
-    }
-    .name_img img{
-        width: 90px;
-        border-radius: 50%;
-    }
-    .name_img p{
-        font-size: 18px;
-        font-weight: bold;
-    }
-    .name_img{
-        display:flex;
-        align-items: center;
-        margin:10px 0px 20px 0px;
-    }
-    .dropdown{
-        width: 230px;
-        box-shadow: 0 0 10px grey;
-        padding: 15px;
-        background-color: white;
-        display:none;
-        position: absolute;
-        top: 60px;
-    }
-    .dropdown ul li{
-        display: flex;
-        padding: 10px;
-        margin-top: 5px;
-        cursor: pointer;
-    }
-    .dropdown ul li:hover{
-        background-color: #c7dcff;
-    }
-    .dropdown ul{
-        margin-top: 20px;
-    }
-    .dropdown ul li{
-        color: black;
-        font-size: 17px;
-    }
-    .dropdown ul li p{
-        margin-left: 20px;
-        font-size: 17px;
-    }
-    .block{
-        display: block;
-    }
-    .sell button{
-        width: 90px;
-        height: 40px;
-        border-style: solid;
-        border-width: 5px;
-        border-top-color: #23e5db;
-        border-left-color: #ffce32;
-        border-right-color: #3a77ff;
-        border-bottom-color: #3a77ff;
-        font-size: 15px;
-        background-color: white;
-        color:black;
-        border-radius: 25px;
-        margin-left: 20px;
-    }
 
-          /* ---------------------Navbar2------------------ */
+.header{
+    background-color: white;
+    box-shadow: 0 0 2px grey;
+    position: sticky;
+    top: 0%;
+    z-index: 5;
+}
+.nav1{
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-color: #e6f5fc;
+    width: auto;
+    justify-content: space-between;
+}
+.nav1 img{
+    width: 100px;
+    margin-left: 20px;
+}
+.state_select{
+  width: 250px;
+   /* align-items: center; */
+}
+.filter i{
+    font-size: 15px;
+    transition: all 0.3s;
+}
+.filter{
+    width: 100%;
+    padding : 10px 10px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    margin-left: 40px;
+}
+.filter p{
+    padding-right: 75px;
+}
+.option{
+    display: flex;
+    padding: 10px;
+    width: 250px;
+    cursor: pointer;
+}
+.option:hover{
+      background-color: #c7dcff;
+}
+.option p{
+    margin-left: 10px;
+    color: #444444;
+}
+.option i{
+    color: #839a9c;
+}
+.option_box{
+    box-shadow: 0 0 10px grey;
+    background-color: white; 
+    display: none;
+    position: absolute;
+    top: 100px;
+    position: absolute;
+    top: 60px;
+}
+.hide{
+    display:block;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+#search{
+    display: flex;
+    /* width: 350px;
+    height:48px; */
+    margin-left: 60px;
+}
+#search i{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    
+}
+#search-inp{
+    padding: 10px;
+    width: 370px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 5px 0px 0px 5px;
+}
+#eng_tag{
+    cursor: pointer;
+    font-size: 18px;
+   margin-left: 25px;
+}
+.hin_eng{
+    background-color: white;
+    box-shadow: 0 0 10px grey;
+    width: 180px;
+    display: none;
+    position: absolute;
+    top: 60px;
+   
+}
+.hin_eng li{
+    list-style: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+.hin_eng li:hover{
+    background-color: #c7dcff;
+}
+.lang1{
+    display: flex;
+}
+.lang1 i{
+    margin-top: 5px;
+    padding-left: 10px; 
+    transition: all 0.3s;
+}
+.display_lang{
+    display: block;
+}
+.message i{
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+   margin-left: 25px;
+}
+.notification i{
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+   margin-left: 25px;
+}
+.avatar{
+    display:flex;
+}
+.avatar i{
+    margin-top: 25px;
+    padding-left: 10px;
+    
+}
+.avatar img{
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.name_img img{
+    width: 90px;
+    border-radius: 50%;
+}
+.name_img p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.name_img{
+    display:flex;
+    align-items: center;
+    margin:10px 0px 20px 0px;
+}
+.dropdown{
+    width: 230px;
+    box-shadow: 0 0 10px grey;
+    padding: 15px;
+    background-color: white;
+    display:none;
+    position: absolute;
+    top: 60px;
+}
+.dropdown ul li{
+    display: flex;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.dropdown ul li:hover{
+    background-color: #c7dcff;
+}
+.dropdown ul{
+    margin-top: 20px;
+}
+.dropdown ul li{
+    color: black;
+    font-size: 17px;
+}
+.dropdown ul li p{
+    margin-left: 20px;
+    font-size: 17px;
+}
+.block{
+    display: block;
+}
+.sell button{
+    width: 90px;
+    height: 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-top-color: #23e5db;
+    border-left-color: #ffce32;
+    border-right-color: #3a77ff;
+    border-bottom-color: #3a77ff;
+    font-size: 15px;
+    background-color: white;
+    color:black;
+    border-radius: 25px;
+    margin-left: 20px;
+}
+
+/* ---------------------Navbar2------------------ */
 .nav2{
-
     box-shadow: 0 0 2px grey;
     position: sticky;
     height: 40px;
@@ -239,8 +239,13 @@
     font-size: 20px;
     padding-right: 50px;
 }
-         /* -------------Navbar3----------- */
-#nav3{
+.nav2 a{
+    text-decoration: none;
+    color: black;
+}
+
+  /* ------------------------Navbar3------------------ */
+  #nav3{
     /* border: 1px solid red; */
     width:100%;
     height: 150px;
@@ -276,8 +281,9 @@ button{
     height: 150px;
     margin-right: 50px;
 }
-       /* -------------------ad-img-------------------------- */
-.ad_img img{
+
+ /* -------------------ad-img-------------------------- */
+ .ad_img img{
     width: 100%;
     position: relative;
     z-index: -1;
@@ -298,8 +304,9 @@ button{
     cursor: pointer;
 }
 
-        /* --------------------------product-------------------------- */
-#container{
+ /* --------------------------product-------------------------- */
+ #container{
+    border: 2px solid red;
     display:grid;
     width:90%;
     grid-template-columns:repeat(4,1fr);
@@ -308,15 +315,19 @@ button{
     margin:auto;
     margin-top: 40px;   
 }
+#container a{
+    text-decoration: none;
+    color: black;
+}
 #container>div{
     border:1px solid rgb(121, 224, 224);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 5px;
 }
-#container>div:hover{
+#container>div>:hover{
     background-color: #f5f8fd;
 }
-#container>div>img{
+#container>div>a>img{
     width: 50%;
     height: 140px;
     margin-left: 80px;
@@ -325,24 +336,24 @@ h3{
     padding-left: 15px;
     padding-top: 10px;
 }
-p{
+#container p{
     padding-top: 10px;
     padding-left: 15px;
     font-size: 14px;
     color: grey;
 }
-#container>div>div{
+#container>div>a>div{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
-#container>div>div>p{
+#container>div>a>div>p{
     font-size: 10px;
 }
 
-    /* <---------------------------------load more--------------------------> */
+ /* <---------------------------------load more--------------------------> */
 
-#load{
+ #load{
     background-color: white;
     color: black;
     font-size: 16px;
@@ -384,7 +395,7 @@ h3{
     padding-left: 15px;
     padding-top: 10px;
 }
-p{
+.container p{
     padding-top: 10px;
     padding-left: 15px;
     font-size: 14px;
@@ -401,79 +412,101 @@ p{
 
 
     /* -------------------ad-img2-------------------------- */
-.ad_img2 img{
-    width: 100%;
-    position: relative;
-    z-index: -1;
-}  
-.ad_img2{
-    /* border: 1px solid red; */
-    width: 70%;
-    /* height: 200px; */
-    margin: auto;
-    margin-top: 40px;
-    position: relative;
-}    
-.ad_img2 i{
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    z-index: 1;
-    cursor: pointer;
-}
+    .ad_img2 img{
+        width: 100%;
+        position: relative;
+        z-index: -1;
+    }  
+    .ad_img2{
+        /* border: 1px solid red; */
+        width: 70%;
+        /* height: 200px; */
+        margin: auto;
+        margin-top: 40px;
+        position: relative;
+    }    
+    .ad_img2 i{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        z-index: 1;
+        cursor: pointer;
+    }
+    
+        /* <--------------------------------download---------------------------->  */
+    .download_app{
+        background-color: #f7f8f9;
+    }
+    .download{
+         margin: 100px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .images{
+        width: 400px;
+    }
+    .text{
+        border-right: 2px solid #cacdce;
+    }
+    .text h1{
+        padding: 20px 20px 10px 20px;
+        font-size: 35px;
+    }
+    .text p{
+        padding: 10px 20px 20px 20px;
+        font-size: 20px;
+        color: black;
+    }
+    .download_store p{
+        padding: 20px 20px 20px 0;
+        font-weight: bold;
+        font-size: 16px;
+        color: black;
+    }
+    .download_store{
+        padding-left: 30px;
+    }
+            /* <--------------------------------footer---------------------------->  */
+    
+    
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        width: auto;
+        height:150px;
+        margin: auto;
+        background-color: #ebeeef;
+    }
+    .footer>div{
+        margin-top: 20px;
+    }
+    .footer>div>h5{
+        padding-bottom: 10px;
+    }
+    #follow>i{
+        color: grey;
+        padding: 5px;
+    }
+    .footer> div >p{
+        color: grey;
+        font-size: 12px;
+        padding-top: 5px;
+    }
 
-    /* <--------------------------------download---------------------------->  */
-.download_app{
-    background-color: #f7f8f9;
-}
-.download{
-     margin: 100px 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.images{
-    width: 400px;
-}
-.text{
-    border-right: 2px solid #cacdce;
-}
-.text h1{
-    padding: 20px 20px 10px 20px;
-    font-size: 35px;
-}
-.text p{
-    padding: 10px 20px 20px 20px;
-    font-size: 20px;
-    color: black;
-}
-.download_store p{
-    padding: 20px 20px 20px 0;
-    font-weight: bold;
-    font-size: 16px;
-    color: black;
-}
-.download_store{
-    padding-left: 30px;
-}
-        /* <--------------------------------footer---------------------------->  */
-
-
-.footer{
-    display: flex;
-    justify-content: space-around;
-    width: auto;
-    height:150px;
-    margin: auto;
-    background-color: #ebeeef;
-}
-.footer>div{
-    margin-top: 20px;
-}
-.footer>div>h5{
-    padding-left: 13px;
-}
-#follow>i{
-    padding-left: 13px;
-    color: grey;
-}
+    #bottom{
+        background-color: #263238;
+        width: auto;
+        height: 100px;
+        color: white;
+    }
+    #bottom h6{
+        padding-top: 25px;
+        padding-left: 70px;
+    }
+    #bottom p{
+        padding-top: 10px;
+        padding-left: 70px;
+        font-size: 11px;
+    }
+    
