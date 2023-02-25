@@ -5,10 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <title> RBS </title>
+    <title>RBS Home</title>
     <link rel="stylesheet" href="index.css">
-    <link
-  rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <style>
+        .login a{
+            padding-left: 20px;
+            color: black;
+            font-weight: bold;
+        }
+        #search-inp{
+            width: 370px;
+            margin-left: 50px;
+        }
+        .filter{
+            width: 115%;
+        }
+
+    </style>
 </head>
 <body>
      <!-- ----------------Navbar1--------------- -->
@@ -70,57 +85,9 @@
                 </ul>
             </div>
 
-                <div class="message">
-                    <i class="fa-regular fa-comment"></i>
-                </div>
-
-                <div class="notification">
-                    <i class="fa-regular fa-bell"></i>
-                </div>
-
-                <div class="photo" id="abc">
-                    <div class="avatar" id="avatar_img">
-                        <img src="./image/photo.jpg" alt=""/>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-
-                    <div class="dropdown" id="dropdown">
-                        <div class="name_img">
-                            <img src="./image/photo.jpg" alt=""/>
-                            <p>Sudhist Kumar</p>
-                        </div>
-
-                        <ul>
-                            <li>
-                                <i class="fa fa-light fa-heart"></i>
-                                <p>My ADS</p>
-                            </li>
-                            <li>
-                                <i class="fa fa-light fa-building"></i>
-                                <p>Buy Business Packages</p>
-                            </li>
-                            <li>
-                                <i class="fa fa-light fa-briefcase"></i>
-                                <p>Bought Packages & Billing</p>
-                            </li>
-                            <hr>
-                            <li>
-                                <i class="fa-regular fa-circle-question"></i>
-                                <p>Help</p>
-                            </li>
-                            <hr>
-                            <li>
-                                <i class="fa fa-light fa-gear"></i>
-                                <p>Settings</p>
-                            </li>
-                            <hr>
-                    
-                            <li>
-                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                                <p>Logout</p> 
-                            </li>
-                        </ul>
-                    </div>
+                
+                <div class="login">
+                    <a href="login.html">Login</a>
                 </div>
 
                 <div class="sell">
@@ -539,7 +506,7 @@ let lang = document.getElementById("lang");
 let move = document.getElementById("move");
 
 lang.addEventListener("click", () =>{
-    hin_eng.classList.toggle("display_lang");   
+    hin_eng.classList.toggle("display_lang");
     move.classList.toggle("rotate1")
 });
 function languages(show){

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="form-wrap">
+            <form action="">
+                <h1>Signup</h1>
+                <div class="single-input">
+                    <input type="text" id="fname" placeholder="First Name">
+                </div>
+                <div class="single-input">
+                    <input type="text" id="lname" placeholder="Last Name">
+                </div>
+                <div class="single-input">
+                    
+                    <input type="email" id="email" placeholder="Email Address">
+                </div>
+                <div class="single-input">
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+                <div class="single-input">
+                    <input type="password" id="cpassword" placeholder="Confirm Password">
+                </div>
+                <div class="submit-button">
+                    <button class="button">Submit</button>
+                </div>
+                <div class="account">
+                    <a href="#">Forget Password</a>
+                    <p>Already have a account? </p><a href="login.html">Login Now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+    const submit_button = document.querySelector(".button");
+   
+        submit_button.addEventListener("click",function(event){ 
+            event.preventDefault();
+
+        const fname = document.getElementById("fname").value;
+        const lname = document.getElementById("lname").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const cpassword = document.getElementById("cpassword").value;
+
+        localStorage.setItem("FirstName",fname);
+        localStorage.setItem("LirstName",lname);
+        localStorage.setItem("Email",email);
+        localStorage.setItem("Password",password);
+        localStorage.setItem("Cpassword",cpassword);
+
+        if(fname == "" && lname == "" && email == "" && 
+        password == "" && cpassword == ""){ 
+        alert("Please fill the input field");
+        alert.style.color = red;
+        }
+        else {
+            if(password !== cpassword){
+                alert("Password does not match");
+            }
+            else{
+                alert("registration successful");
+            }
+        }
+    });
+</script>
+
+</html>

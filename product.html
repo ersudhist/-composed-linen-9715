@@ -20,7 +20,7 @@
         <div class="state_select" id="state">
             <div class="filter">
                 <i class="fa fa-light fa-magnifying-glass"></i>
-                <p id="text">select</p>
+                <p id="text">Kochi,Kerala</p>
                 <i class="fa-solid fa-chevron-down" id="moving"></i>
             </div>
            
@@ -224,9 +224,10 @@ let move = document.getElementById("move");
 
 lang.addEventListener("click", () =>{
     hin_eng.classList.toggle("display_lang");
+    move.classList.toggle("rotate1")
 });
 function languages(show){
-    hin_eng.innerHTML = show;
+    eng_tag.innerHTML = show;
 }
 
 let abc = document.getElementById("abc");
