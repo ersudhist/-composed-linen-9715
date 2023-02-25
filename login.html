@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="main">
+        <div class="form-wrap">
+            <form action="">
+                <h1>Login</h1>
+                <div class="single-input">
+                    <input type="email" id="email" placeholder="Email Address">
+                </div>
+                <div class="single-input">
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+               
+                <div class="submit-button">
+                    <button class="button login">Login</button>
+                </div>
+                <div class="account">
+                    <a href="#">Forget Password</a>
+                    <p>Don't have an account?</p><a href="registration.html">Signup now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+
+        const Email =  localStorage.getItem("Email");
+        const Pass =  localStorage.getItem("Password");    
+    
+        const login = document.querySelector(".login");
+        login.addEventListener("click",function(event){ 
+            event.preventDefault();
+
+        const emailAdd = document.getElementById("email").value;
+        const password = document.getElementById("password").value;  
+        
+
+        if(emailAdd == "" && password == ""){
+            alert("Please fill the input field");
+        }
+        else{
+            if(emailAdd == Email && password == Pass){
+                alert("Login successful");
+                window.location.assign("index.html");
+            }
+            else{
+                alert("Username not matched");
+            }
+        }
+    });
+</script>
+
+</html>
