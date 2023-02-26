@@ -203,10 +203,11 @@
     color: black;
     font-size: 17px;
 }
-.dropdown ul li p{
+.dropdown ul li a{
     margin-left: 20px;
     font-size: 16px;
     color: rgb(85, 84, 84);
+    text-decoration: none;
 }
 .block{
     display: block;
@@ -247,6 +248,10 @@
 .nav2 a{
     text-decoration: none;
     color: black;
+}
+.nav2 a:hover{
+    background-color: #eef1f7;
+    cursor: pointer;
 }
 
   /* ------------------------Navbar3------------------ */
@@ -518,4 +523,6 @@ button{
         padding-left: 70px;
         font-size: 11px;
     }
+
+ 
     
