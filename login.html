@@ -23,7 +23,7 @@
                     <button class="button login">Login</button>
                 </div>
                 <div class="account">
-                    <a href="#">Forget Password</a>
+                    <a href="#">Forgot Password</a>
                     <p>Don't have an account?</p><a href="registration.html">Signup now</a>
                 </div>
             </form>
@@ -37,26 +37,50 @@
         const Pass =  localStorage.getItem("Password");    
     
         const login = document.querySelector(".login");
+
+       
+
         login.addEventListener("click",function(event){ 
-            event.preventDefault();
-
+            event.preventDefault(); 
         const emailAdd = document.getElementById("email").value;
-        const password = document.getElementById("password").value;  
-        
+        const password = document.getElementById("password").value;   
 
+
+        let userData = {
+                your_email : emailAdd,
+                your_pass : password,
+            };
+            // console.log(userData)
+            localStorage.setItem("userLogin",JSON.stringify(userData));
+            
+
+            function getdata(){
+                let userGetData = JSON.parse(localStorage.getItem("userLogin")) 
+                // console.log(userGetData)
+            }
+            getdata();
+        
         if(emailAdd == "" && password == ""){
             alert("Please fill the input field");
+            window.location.assign("index.html");
         }
         else{
             if(emailAdd == Email && password == Pass){
                 alert("Login successful");
-                window.location.assign("index.html");
+            }
+            else if(emailAdd == Email && password !== Pass){
+                alert("Passowrd is incorrect");
+            }
+            else if(emailAdd !== Email && password == Pass){
+                alert("Email is incorrect");
             }
             else{
-                alert("Username not matched");
+                alert("userID not matched");
             }
         }
     });
+    
+    
 </script>
 
 </html>

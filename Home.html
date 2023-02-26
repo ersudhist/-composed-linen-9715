@@ -45,7 +45,11 @@
                     <i class="fa fa-light fa-location-dot"></i>
                     <p>Andhra Pradesh</p>
                 </li>
-                <li class="option" onclick="myfunction('Bangalore')">
+                <li class="option" onclick="myfunction('Kerala')">
+                    <i class="fa fa-light fa-location-dot"></i>
+                    <p>Kerala</p>
+                </li>
+                <li class="option" onclick="myfunction('Bengaluru')">
                     <i class="fa fa-light fa-location-dot"></i>
                     <p>Bengaluru</p>
                 </li>
@@ -70,7 +74,7 @@
            
             <div id="search">
                 <input type="text" id="search-inp" placeholder="Find Cars Mobile Phones and more..."/>
-                <p> <i class="fa fa-light fa-magnifying-glass"></i></p>
+                <p> <i id="search-btn" class="fa fa-light fa-magnifying-glass"></i></p>
               </div>
 
               <div class="language" id="lang">
@@ -102,9 +106,9 @@
         <h3 id="text">All Categories</h3>
         <i id="mov"class="fa-solid fa-chevron-down" ></i>
    
-        <a href="">Cars</a>
-        <a href="#">Motorcycles</a>
-        <a href="#">Mobile Phones</a>
+        <a href="https://www.olx.in/cars_c84">Cars</a>
+        <a href="https://www.olx.in/motorcycles_c81">Motorcycles</a>
+        <a href="https://www.olx.in/mobile-phones_c1453">Mobile Phones</a>
         <a href="#">For Sale: Houses & Apartments</a>
         <a href="#">Scooters</a>
         <a href="#">Commercial & Other Vehicles</a>
@@ -428,7 +432,7 @@
             <img src="./image/footer.jpg" class="imges">
 
             <div class="text">
-                <h1> TRY THE OLX APP</h1>
+                <h1> TRY THE RBS APP</h1>
                 <p>Buy, sell and find just about anything using <br>
                     the app on your mobile.</p>
             </div>
@@ -457,17 +461,17 @@
             </div>
             <div>
                 <h5>ABOUT US</h5>
-                <p> About OLX Group</p>
+                <p> About RBS Group</p>
                 <p>Careers</p>
                 <p>Contact Us</p>
-                <p>OLXPeople</p>
+                <p>RBSPeople</p>
             </div>
             <div>
-                <h5>OLX</h5>
+                <h5>RBS</h5>
                 <p> Help</p>
                 <p>Legal & Privacy information</p>
                 <p>Blog</p>
-                <p>OLX Autos Sell Car</p>
+                <p>RBS Autos Sell Car</p>
             </div>
             <div id="follow">
                 <h5>FOLLOW US</h5>
@@ -531,7 +535,7 @@ ad_icon.addEventListener("click", ()=>{
 
 // <------------------------------load more---------------------->
 
-    let load = document.getElementById("load");
+let load = document.getElementById("load");
 let load_more_id = document.getElementById("load_more_id");
 
 load.addEventListener("click", ()=>{

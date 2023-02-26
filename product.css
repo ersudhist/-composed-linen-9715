@@ -205,10 +205,11 @@ body{
     color: black;
     font-size: 17px;
 }
-.dropdown ul li p{
+.dropdown ul li a{
     margin-left: 20px;
     font-size: 16px;
     color: rgb(85, 84, 84);
+    text-decoration: none;
 }
 .block{
     display: block;
