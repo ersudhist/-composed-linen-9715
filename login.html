@@ -61,12 +61,12 @@
             getdata();
         
         if(emailAdd == "" && password == ""){
-            alert("Please fill the input field");
-            window.location.assign("index.html");
+            alert("Please fill the input field"); 
         }
         else{
             if(emailAdd == Email && password == Pass){
                 alert("Login successful");
+                window.location.assign("index.html");
             }
             else if(emailAdd == Email && password !== Pass){
                 alert("Passowrd is incorrect");
